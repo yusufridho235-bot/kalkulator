@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Kalkulator</h2>
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons">
+            <button class="hapus" onclick="hapusSemua()">C</button>
+            <button class="hapus" onclick="hapusSatu()">DEL</button>
+            <button class="operator" onclick="tambah('/')">÷</button>
+            <button class="operator" onclick="tambah('*')">×</button>
+
+            <button onclick="tambah('7')">7</button>
+            <button onclick="tambah('8')">8</button>
+            <button onclick="tambah('9')">9</button>
+            <button class="operator" onclick="tambah('-')">−</button>
+
+            <button onclick="tambah('4')">4</button>
+            <button onclick="tambah('5')">5</button>
+            <button onclick="tambah('6')">6</button>
+            <button class="operator" onclick="tambah('+')">+</button>
+
+            <button onclick="tambah('1')">1</button>
+            <button onclick="tambah('2')">2</button>
+            <button onclick="tambah('3')">3</button>
+            <button class="hasil" onclick="hitung()">=</button>
+
+            <button onclick="tambah('0')" class="nol">0</button>
+            <button onclick="tambah('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
